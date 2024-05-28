@@ -5,13 +5,13 @@ let newString;
 function upperFirst(stringa) {
     newString = stringa.split(" ");
     for(let i = 0; i < newString.length; i++) {
-    newString[i] = newString[i].charAt(0).toUpperCase() + newString[i].replaceAll(newString[i].charAt(0), "") 
+    newString[i] = newString[i].charAt(0).toUpperCase() + newString[i].replace(newString[i].charAt(0), "") 
         
     }
 
-   return newString
+   return newString.join(" ")
 }
-console.log(upperFirst("Ciao mi chiamo Antonietta"))
+console.log(upperFirst("Ciao mi chiamo antonietta"))
 
 
 
